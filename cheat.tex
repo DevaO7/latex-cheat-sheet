@@ -10,6 +10,26 @@
     3x + 9y &=  -12
 \end{align*}
 
+
+
+%! Multiline. But LHS remains the same. RHS at each line gets more and more simplified
+\begin{equation} \label{eq1}
+\begin{split}
+\lambda \Bar{x}^{-T} x & = \Bar{x}^{-T} \lambda x \\
+ & = \frac{1}{2} \pi r^2
+\end{split}
+\end{equation}
+
+
+%! Writing Case based Equations
+\begin{equation}
+    \sum_{i=1}^n a_{ki}y_i = \begin{cases}
+        0, &\text{ if } i \neq k \\
+        1, &\text{ if } i = k
+    \end{cases}
+\end{equation}
+
+
 %! How to reference Equations? 
 \begin{Equations}\label{<some label>}
     <equation>
@@ -22,4 +42,41 @@ $\left(      )\right$
 
 
 %! Inserting a picture
+% Centre Aligned Image 
+%   - Scale Is Literally that scale 
+\begin{center}
+    \includegraphics[scale = 0.195]{output.png}    
+\end{center}
 
+%! Creating Matrix
+% Square kind - Also got those vertical dots, horizontal dots as well. 
+\begin{bmatrix}
+    2&-3&0&1&0&0& ....\\
+    0 &  2 & -3 & 0 & 1 & 0 & \dots \\
+    0 & 0 &  2 & -3 & 0 & 1 & \dots \\
+    0 & 0 & 0 &  2 & -3 & 0 & \ddots\\
+    \vdots & \vdots &  \vdots & \vdots & \ddots & \ddots & \dots
+    \end{bmatrix}
+
+%! Creating a determinal form of matrix
+
+\begin{vmatrix}
+    a_{22}-\lambda & 0 & \cdots & 0 \\
+    a_{32} & a_{33} - \lambda & \cdots & 0 \\
+    \vdots & \vdots & \ddots & \vdots \\
+    a_{n2} & a_{n3} & \cdots & a_{nn} - \lambda
+    \end{vmatrix}
+
+%! In general for dots
+% This can be used while writing equations as well
+
+\vdots, \ddots, \dots
+
+
+%! Creating the Double Line letters like R and C
+
+\mathbb{R}
+
+
+%! Bar over variables
+\Bar{x}
